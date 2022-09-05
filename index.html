@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashbord</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color: green;">
+      <h1 style="align:center"><strong>Admin Dashbord</strong>
+          <a href="login.html" style="font-size: 0.2;">Back</a>
+      </h1>
+
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" >
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" >
+                    </div>
+                    <div>
+                        <label for="empCode">Email</label>
+                        <input type="text" name="empCode" id="empCode" >
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <input type="text" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <label for="Phno">Phone Number</label>
+                        <input type="text" name="Phno" id="Phno">
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" >
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone No</th>
+                            <th>Gender</th>
+                            <th>Date of Birth</th>
+                            <th>Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
